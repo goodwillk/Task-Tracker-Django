@@ -1,0 +1,962 @@
+{
+	"info": {
+		"_postman_id": "c642b714-d91f-49ef-b5eb-37d480a172d3",
+		"name": "Task Tracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25695451"
+	},
+	"item": [
+		{
+			"name": "List Tasks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}:{{port}}/api/task/get/",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"task",
+						"get",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List Tasks Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}:{{port}}/api/task/get/",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"task",
+								"get",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 24 Feb 2023 06:35:35 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3376"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"task\": {\n            \"movie\": \"superman\"\n        },\n        \"created_at\": \"2023-02-21T10:18:33.974125Z\",\n        \"updated_at\": \"2023-02-21T10:18:33.974136Z\",\n        \"estimated_time\": \"2023-02-22T10:18:09Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 2,\n        \"task\": {\n            \"Trip\": \"Himachal Pradesh\",\n            \"Project\": \"Start new Django Project\"\n        },\n        \"created_at\": \"2023-02-21T11:33:44.383021Z\",\n        \"updated_at\": \"2023-02-21T11:33:44.383035Z\",\n        \"estimated_time\": \"2023-02-22T11:33:44.377763Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 5,\n        \"task\": {\n            \"after ofiice\": \"practice coding\"\n        },\n        \"created_at\": \"2023-02-22T05:51:17.273193Z\",\n        \"updated_at\": \"2023-02-22T05:51:17.273210Z\",\n        \"estimated_time\": \"2023-02-23T05:51:17.267837Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 9,\n        \"task\": {\n            \"before office\": \"swimming\"\n        },\n        \"created_at\": \"2023-02-22T12:19:51.095171Z\",\n        \"updated_at\": \"2023-02-22T12:19:51.095187Z\",\n        \"estimated_time\": \"2023-02-23T12:19:51.089673Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 10,\n        \"task\": {\n            \"exercise\": \"yoga\"\n        },\n        \"created_at\": \"2023-02-23T06:32:17.652628Z\",\n        \"updated_at\": \"2023-02-23T06:32:17.652646Z\",\n        \"estimated_time\": \"2023-02-24T06:32:17.647391Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 28,\n        \"task\": {\n            \"game\": \"cricket\"\n        },\n        \"created_at\": \"2023-02-23T09:00:04.116829Z\",\n        \"updated_at\": \"2023-02-23T09:00:04.136948Z\",\n        \"estimated_time\": \"2023-02-24T09:00:04.111002Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 29,\n        \"task\": {\n            \"game\": \"ludo\"\n        },\n        \"created_at\": \"2023-02-23T09:00:52.973728Z\",\n        \"updated_at\": \"2023-02-23T09:00:52.978507Z\",\n        \"estimated_time\": \"2023-02-24T09:00:52.967955Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 30,\n        \"task\": {\n            \"game\": \"kho-kho\"\n        },\n        \"created_at\": \"2023-02-23T09:05:55.107173Z\",\n        \"updated_at\": \"2023-02-23T09:05:55.121209Z\",\n        \"estimated_time\": \"2023-02-24T09:05:55.101863Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 31,\n        \"task\": {\n            \"game\": \"TT\"\n        },\n        \"created_at\": \"2023-02-23T09:09:06.949041Z\",\n        \"updated_at\": \"2023-02-23T09:09:06.953443Z\",\n        \"estimated_time\": \"2023-02-24T09:09:06.942581Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 32,\n        \"task\": {\n            \"game\": \"Ball\"\n        },\n        \"created_at\": \"2023-02-23T09:10:20.696622Z\",\n        \"updated_at\": \"2023-02-23T09:10:20.709004Z\",\n        \"estimated_time\": \"2023-02-24T09:10:20.689818Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 33,\n        \"task\": {\n            \"game\": \"hockey\"\n        },\n        \"created_at\": \"2023-02-23T09:14:41.595960Z\",\n        \"updated_at\": \"2023-02-23T09:14:41.597858Z\",\n        \"estimated_time\": \"2023-02-24T09:14:41.590562Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 34,\n        \"task\": {\n            \"game\": \"football\"\n        },\n        \"created_at\": \"2023-02-23T09:15:54.053244Z\",\n        \"updated_at\": \"2023-02-23T09:15:54.053268Z\",\n        \"estimated_time\": \"2023-02-24T09:15:54.047847Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 35,\n        \"task\": {\n            \"game\": \"basketball\"\n        },\n        \"created_at\": \"2023-02-23T09:17:04.048065Z\",\n        \"updated_at\": \"2023-02-23T09:17:04.048082Z\",\n        \"estimated_time\": \"2023-02-24T09:17:04.042570Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 36,\n        \"task\": {\n            \"game\": \"baseball\"\n        },\n        \"created_at\": \"2023-02-23T09:18:56.049548Z\",\n        \"updated_at\": \"2023-02-23T09:18:56.049566Z\",\n        \"estimated_time\": \"2023-02-24T09:18:56.043874Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 37,\n        \"task\": {\n            \"game\": \"mobilegame\"\n        },\n        \"created_at\": \"2023-02-23T09:23:43.023820Z\",\n        \"updated_at\": \"2023-02-23T09:23:43.023837Z\",\n        \"estimated_time\": \"2023-02-24T09:23:43.018633Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 38,\n        \"task\": {\n            \"game\": \"pcgames\"\n        },\n        \"created_at\": \"2023-02-23T09:29:59.951632Z\",\n        \"updated_at\": \"2023-02-23T09:29:59.951649Z\",\n        \"estimated_time\": \"2023-02-24T09:29:59.944962Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 39,\n        \"task\": {\n            \"movie\": \"batman\"\n        },\n        \"created_at\": \"2023-02-24T06:25:39.436005Z\",\n        \"updated_at\": \"2023-02-24T06:25:39.436020Z\",\n        \"estimated_time\": \"2023-02-25T06:25:39.430358Z\",\n        \"is_task_completed\": false\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"abc\" : {\"movie\":\"transformers 17\", \"assignment\": \"DC\"},\n    \"estimated_time\" : \"2024-12-03T00:12:07Z\",\n    \"is_task_completed\" : \"False\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}:{{port}}/api/task/post/",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"task",
+						"post",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Task Example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"abc\" : {\"movie\":\"transformers 17\", \"assignment\": \"DC\"},\n    \"estimated_time\" : \"2024-12-03T00:12:07Z\",\n    \"is_task_completed\" : \"False\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}:{{port}}/api/task/post/",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"task",
+								"post",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 27 Feb 2023 05:18:07 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"movie\": \"transformers 17\",\n    \"assignment\": \"DC\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Retrieve Task",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}:{{port}}/api/task/5/get/",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"task",
+						"5",
+						"get",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Retrieve Task Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}:{{port}}/api/task/5/get/",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"task",
+								"5",
+								"get",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 24 Feb 2023 06:43:11 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "209"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 5,\n    \"task\": {\n        \"after ofiice\": \"practice coding\"\n    },\n    \"created_at\": \"2023-02-22T05:51:17.273193Z\",\n    \"updated_at\": \"2023-02-22T05:51:17.273210Z\",\n    \"estimated_time\": \"2023-02-23T05:51:17.267837Z\",\n    \"is_task_completed\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "Put in Task",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"abc\" : {\"greeting\" : \"heyyyy\"}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}:{{port}}/api/task/74/put/",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"task",
+						"74",
+						"put",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Put in Task Example",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"abc\" : {\"greeting\" : \"heyyyy\"}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}:{{port}}/api/task/74/put/",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"task",
+								"74",
+								"put",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 27 Feb 2023 05:20:17 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "21"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"greeting\": \"heyyyy\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Patch in Task",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"abc\":{\n        \"msg\":\"msg patched in hii\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}:{{port}}/api/task/61/patch/",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"task",
+						"61",
+						"patch",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Patch in Task Example",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"abc\":{\n        \"msg\":\"msg patched in hii\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}:{{port}}/api/task/61/patch/",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"task",
+								"61",
+								"patch",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 27 Feb 2023 05:22:22 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"msg patched in hii\",\n    \"greeting\": \"Hii\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}:{{port}}/api/task/73/delete/",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"task",
+						"73",
+						"delete",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Task Example",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}:{{port}}/api/task/73/delete/",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"task",
+								"73",
+								"delete",
+								""
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 27 Feb 2023 05:09:16 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "\"Object Deleted Successfully.\""
+				}
+			]
+		},
+		{
+			"name": "Estimate Time Filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}:{{port}}/api/task/filter_estimate/get/?end_date=2023-02-27T23:59:59Z&start_date=2023-02-23",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"task",
+						"filter_estimate",
+						"get",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "end_date",
+							"value": "2023-02-27T23:59:59Z"
+						},
+						{
+							"key": "start_date",
+							"value": "2023-02-23"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Estimate Time Filter Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}:{{port}}/api/task/filter_estimate/get/?end_date=2023-02-27T23:59:59Z&start_date=2023-02-23",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"task",
+								"filter_estimate",
+								"get",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "end_date",
+									"value": "2023-02-27T23:59:59Z"
+								},
+								{
+									"key": "start_date",
+									"value": "2023-02-23"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 27 Feb 2023 05:10:20 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "5609"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 5,\n        \"task\": {\n            \"after ofiice\": \"practice coding\"\n        },\n        \"created_at\": \"2023-02-22T05:51:17.273193Z\",\n        \"updated_at\": \"2023-02-22T05:51:17.273210Z\",\n        \"estimated_time\": \"2023-02-23T05:51:17.267837Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 9,\n        \"task\": {\n            \"before office\": \"swimming\"\n        },\n        \"created_at\": \"2023-02-22T12:19:51.095171Z\",\n        \"updated_at\": \"2023-02-22T12:19:51.095187Z\",\n        \"estimated_time\": \"2023-02-23T12:19:51.089673Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 10,\n        \"task\": {\n            \"exercise\": \"yoga\"\n        },\n        \"created_at\": \"2023-02-23T06:32:17.652628Z\",\n        \"updated_at\": \"2023-02-23T06:32:17.652646Z\",\n        \"estimated_time\": \"2023-02-24T06:32:17.647391Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 54,\n        \"task\": {\n            \"Greeting\": \"Hello\"\n        },\n        \"created_at\": \"2023-02-24T09:56:30.519520Z\",\n        \"updated_at\": \"2023-02-24T11:39:48.135886Z\",\n        \"estimated_time\": \"2023-02-25T09:56:30.514027Z\",\n        \"is_task_completed\": true\n    },\n    {\n        \"id\": 28,\n        \"task\": {\n            \"game\": \"cricket\"\n        },\n        \"created_at\": \"2023-02-23T09:00:04.116829Z\",\n        \"updated_at\": \"2023-02-23T09:00:04.136948Z\",\n        \"estimated_time\": \"2023-02-24T09:00:04.111002Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 29,\n        \"task\": {\n            \"game\": \"ludo\"\n        },\n        \"created_at\": \"2023-02-23T09:00:52.973728Z\",\n        \"updated_at\": \"2023-02-23T09:00:52.978507Z\",\n        \"estimated_time\": \"2023-02-24T09:00:52.967955Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 30,\n        \"task\": {\n            \"game\": \"kho-kho\"\n        },\n        \"created_at\": \"2023-02-23T09:05:55.107173Z\",\n        \"updated_at\": \"2023-02-23T09:05:55.121209Z\",\n        \"estimated_time\": \"2023-02-24T09:05:55.101863Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 31,\n        \"task\": {\n            \"game\": \"TT\"\n        },\n        \"created_at\": \"2023-02-23T09:09:06.949041Z\",\n        \"updated_at\": \"2023-02-23T09:09:06.953443Z\",\n        \"estimated_time\": \"2023-02-24T09:09:06.942581Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 32,\n        \"task\": {\n            \"game\": \"Ball\"\n        },\n        \"created_at\": \"2023-02-23T09:10:20.696622Z\",\n        \"updated_at\": \"2023-02-23T09:10:20.709004Z\",\n        \"estimated_time\": \"2023-02-24T09:10:20.689818Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 33,\n        \"task\": {\n            \"game\": \"hockey\"\n        },\n        \"created_at\": \"2023-02-23T09:14:41.595960Z\",\n        \"updated_at\": \"2023-02-23T09:14:41.597858Z\",\n        \"estimated_time\": \"2023-02-24T09:14:41.590562Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 34,\n        \"task\": {\n            \"game\": \"football\"\n        },\n        \"created_at\": \"2023-02-23T09:15:54.053244Z\",\n        \"updated_at\": \"2023-02-23T09:15:54.053268Z\",\n        \"estimated_time\": \"2023-02-24T09:15:54.047847Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 35,\n        \"task\": {\n            \"game\": \"basketball\"\n        },\n        \"created_at\": \"2023-02-23T09:17:04.048065Z\",\n        \"updated_at\": \"2023-02-23T09:17:04.048082Z\",\n        \"estimated_time\": \"2023-02-24T09:17:04.042570Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 36,\n        \"task\": {\n            \"game\": \"baseball\"\n        },\n        \"created_at\": \"2023-02-23T09:18:56.049548Z\",\n        \"updated_at\": \"2023-02-23T09:18:56.049566Z\",\n        \"estimated_time\": \"2023-02-24T09:18:56.043874Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 37,\n        \"task\": {\n            \"game\": \"mobilegame\"\n        },\n        \"created_at\": \"2023-02-23T09:23:43.023820Z\",\n        \"updated_at\": \"2023-02-23T09:23:43.023837Z\",\n        \"estimated_time\": \"2023-02-24T09:23:43.018633Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 38,\n        \"task\": {\n            \"game\": \"pcgames\"\n        },\n        \"created_at\": \"2023-02-23T09:29:59.951632Z\",\n        \"updated_at\": \"2023-02-23T09:29:59.951649Z\",\n        \"estimated_time\": \"2023-02-24T09:29:59.944962Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 39,\n        \"task\": {\n            \"movie\": \"batman\"\n        },\n        \"created_at\": \"2023-02-24T06:25:39.436005Z\",\n        \"updated_at\": \"2023-02-24T06:25:39.436020Z\",\n        \"estimated_time\": \"2023-02-25T06:25:39.430358Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 40,\n        \"task\": {\n            \"movie\": \"man of steel\"\n        },\n        \"created_at\": \"2023-02-24T06:37:05.529483Z\",\n        \"updated_at\": \"2023-02-24T06:37:05.529507Z\",\n        \"estimated_time\": \"2023-02-25T06:37:05.522841Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 41,\n        \"task\": {\n            \"trip\": \"shimla\",\n            \"movie\": \"man of steel\"\n        },\n        \"created_at\": \"2023-02-24T07:19:53.628583Z\",\n        \"updated_at\": \"2023-02-24T07:19:53.628597Z\",\n        \"estimated_time\": \"2023-02-25T07:19:53.623355Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 53,\n        \"task\": {\n            \"movie\": \"transformers 6\",\n            \"Greeting\": \"Hello\"\n        },\n        \"created_at\": \"2023-02-24T09:55:06.099642Z\",\n        \"updated_at\": \"2023-02-24T12:32:46.351623Z\",\n        \"estimated_time\": \"2023-02-25T09:55:06.093698Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 46,\n        \"task\": {\n            \"movie\": \"transformers\"\n        },\n        \"created_at\": \"2023-02-24T08:54:15.913980Z\",\n        \"updated_at\": \"2023-02-24T08:54:15.913993Z\",\n        \"estimated_time\": \"2023-02-25T08:54:15.909074Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 47,\n        \"task\": {\n            \"movie\": \"transformers 2\"\n        },\n        \"created_at\": \"2023-02-24T09:11:26.726991Z\",\n        \"updated_at\": \"2023-02-24T09:11:26.727005Z\",\n        \"estimated_time\": \"2023-02-25T09:11:26.721461Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 48,\n        \"task\": {\n            \"movie\": \"transformers 3\"\n        },\n        \"created_at\": \"2023-02-24T09:12:12.976319Z\",\n        \"updated_at\": \"2023-02-24T09:12:12.976337Z\",\n        \"estimated_time\": \"2023-02-25T09:12:12.970617Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 50,\n        \"task\": {\n            \"movie\": \"transformers 4\"\n        },\n        \"created_at\": \"2023-02-24T09:14:23.934204Z\",\n        \"updated_at\": \"2023-02-24T09:14:23.934220Z\",\n        \"estimated_time\": \"2023-02-25T09:14:23.928105Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 51,\n        \"task\": {\n            \"movie\": \"transformers 5\"\n        },\n        \"created_at\": \"2023-02-24T09:14:44.618422Z\",\n        \"updated_at\": \"2023-02-24T09:14:44.618443Z\",\n        \"estimated_time\": \"2023-02-25T09:14:44.611937Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 52,\n        \"task\": {\n            \"movie\": \"transformers 5\"\n        },\n        \"created_at\": \"2023-02-24T09:53:41.022033Z\",\n        \"updated_at\": \"2023-02-24T09:53:41.022051Z\",\n        \"estimated_time\": \"2023-02-25T09:53:41.016835Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 55,\n        \"task\": {\n            \"movie\": \"transformers 8\"\n        },\n        \"created_at\": \"2023-02-24T10:06:40.967423Z\",\n        \"updated_at\": \"2023-02-24T10:06:40.967441Z\",\n        \"estimated_time\": \"2023-02-25T10:06:40.962158Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 56,\n        \"task\": {\n            \"movie\": \"transformers 9\"\n        },\n        \"created_at\": \"2023-02-24T10:07:39.491598Z\",\n        \"updated_at\": \"2023-02-24T10:07:39.491615Z\",\n        \"estimated_time\": \"2023-02-25T10:07:39.486044Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 57,\n        \"task\": {\n            \"movie\": \"transformers 11\"\n        },\n        \"created_at\": \"2023-02-24T10:46:13.902920Z\",\n        \"updated_at\": \"2023-02-24T10:46:13.902938Z\",\n        \"estimated_time\": \"2023-02-25T10:46:13.897128Z\",\n        \"is_task_completed\": false\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Created_at Time FIlter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}:{{port}}/api/task/filter_created/get/?start_date=2023-02-21&end_date=2023-02-23T23:59:59Z",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"task",
+						"filter_created",
+						"get",
+						""
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2023-02-21"
+						},
+						{
+							"key": "end_date",
+							"value": "2023-02-23T23:59:59Z"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Created_at Time FIlter Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}:{{port}}/api/task/filter_created/get/?start_date=2023-02-21&end_date=2023-02-23T23:59:59Z",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"task",
+								"filter_created",
+								"get",
+								""
+							],
+							"query": [
+								{
+									"key": "start_date",
+									"value": "2023-02-21"
+								},
+								{
+									"key": "end_date",
+									"value": "2023-02-23T23:59:59Z"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 24 Feb 2023 06:54:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2941"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"task\": {\n            \"movie\": \"superman\"\n        },\n        \"created_at\": \"2023-02-21T10:18:33.974125Z\",\n        \"updated_at\": \"2023-02-21T10:18:33.974136Z\",\n        \"estimated_time\": \"2023-02-22T10:18:09Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 5,\n        \"task\": {\n            \"after ofiice\": \"practice coding\"\n        },\n        \"created_at\": \"2023-02-22T05:51:17.273193Z\",\n        \"updated_at\": \"2023-02-22T05:51:17.273210Z\",\n        \"estimated_time\": \"2023-02-23T05:51:17.267837Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 9,\n        \"task\": {\n            \"before office\": \"swimming\"\n        },\n        \"created_at\": \"2023-02-22T12:19:51.095171Z\",\n        \"updated_at\": \"2023-02-22T12:19:51.095187Z\",\n        \"estimated_time\": \"2023-02-23T12:19:51.089673Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 10,\n        \"task\": {\n            \"exercise\": \"yoga\"\n        },\n        \"created_at\": \"2023-02-23T06:32:17.652628Z\",\n        \"updated_at\": \"2023-02-23T06:32:17.652646Z\",\n        \"estimated_time\": \"2023-02-24T06:32:17.647391Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 28,\n        \"task\": {\n            \"game\": \"cricket\"\n        },\n        \"created_at\": \"2023-02-23T09:00:04.116829Z\",\n        \"updated_at\": \"2023-02-23T09:00:04.136948Z\",\n        \"estimated_time\": \"2023-02-24T09:00:04.111002Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 29,\n        \"task\": {\n            \"game\": \"ludo\"\n        },\n        \"created_at\": \"2023-02-23T09:00:52.973728Z\",\n        \"updated_at\": \"2023-02-23T09:00:52.978507Z\",\n        \"estimated_time\": \"2023-02-24T09:00:52.967955Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 30,\n        \"task\": {\n            \"game\": \"kho-kho\"\n        },\n        \"created_at\": \"2023-02-23T09:05:55.107173Z\",\n        \"updated_at\": \"2023-02-23T09:05:55.121209Z\",\n        \"estimated_time\": \"2023-02-24T09:05:55.101863Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 31,\n        \"task\": {\n            \"game\": \"TT\"\n        },\n        \"created_at\": \"2023-02-23T09:09:06.949041Z\",\n        \"updated_at\": \"2023-02-23T09:09:06.953443Z\",\n        \"estimated_time\": \"2023-02-24T09:09:06.942581Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 32,\n        \"task\": {\n            \"game\": \"Ball\"\n        },\n        \"created_at\": \"2023-02-23T09:10:20.696622Z\",\n        \"updated_at\": \"2023-02-23T09:10:20.709004Z\",\n        \"estimated_time\": \"2023-02-24T09:10:20.689818Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 33,\n        \"task\": {\n            \"game\": \"hockey\"\n        },\n        \"created_at\": \"2023-02-23T09:14:41.595960Z\",\n        \"updated_at\": \"2023-02-23T09:14:41.597858Z\",\n        \"estimated_time\": \"2023-02-24T09:14:41.590562Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 34,\n        \"task\": {\n            \"game\": \"football\"\n        },\n        \"created_at\": \"2023-02-23T09:15:54.053244Z\",\n        \"updated_at\": \"2023-02-23T09:15:54.053268Z\",\n        \"estimated_time\": \"2023-02-24T09:15:54.047847Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 35,\n        \"task\": {\n            \"game\": \"basketball\"\n        },\n        \"created_at\": \"2023-02-23T09:17:04.048065Z\",\n        \"updated_at\": \"2023-02-23T09:17:04.048082Z\",\n        \"estimated_time\": \"2023-02-24T09:17:04.042570Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 36,\n        \"task\": {\n            \"game\": \"baseball\"\n        },\n        \"created_at\": \"2023-02-23T09:18:56.049548Z\",\n        \"updated_at\": \"2023-02-23T09:18:56.049566Z\",\n        \"estimated_time\": \"2023-02-24T09:18:56.043874Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 37,\n        \"task\": {\n            \"game\": \"mobilegame\"\n        },\n        \"created_at\": \"2023-02-23T09:23:43.023820Z\",\n        \"updated_at\": \"2023-02-23T09:23:43.023837Z\",\n        \"estimated_time\": \"2023-02-24T09:23:43.018633Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 38,\n        \"task\": {\n            \"game\": \"pcgames\"\n        },\n        \"created_at\": \"2023-02-23T09:29:59.951632Z\",\n        \"updated_at\": \"2023-02-23T09:29:59.951649Z\",\n        \"estimated_time\": \"2023-02-24T09:29:59.944962Z\",\n        \"is_task_completed\": false\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Search in Task Filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}:{{port}}/api/task/filter_task/get/?key=movie",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"task",
+						"filter_task",
+						"get",
+						""
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "movie"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Task Filter for 'movie' key Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}:{{port}}/api/task/filter_task/get/?key=movie",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"task",
+								"filter_task",
+								"get",
+								""
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "movie"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 27 Feb 2023 05:13:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.10.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3848"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"task\": {\n            \"movie\": \"superman\"\n        },\n        \"created_at\": \"2023-02-21T10:18:33.974125Z\",\n        \"updated_at\": \"2023-02-21T10:18:33.974136Z\",\n        \"estimated_time\": \"2023-02-22T10:18:09Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 59,\n        \"task\": {\n            \"movie\": \"transformers 13\"\n        },\n        \"created_at\": \"2023-02-24T10:48:40.479518Z\",\n        \"updated_at\": \"2023-02-24T10:48:40.481791Z\",\n        \"estimated_time\": \"2023-12-03T00:12:07Z\",\n        \"is_task_completed\": true\n    },\n    {\n        \"id\": 60,\n        \"task\": {\n            \"movie\": \"transformers 14\"\n        },\n        \"created_at\": \"2023-02-24T10:49:18.739249Z\",\n        \"updated_at\": \"2023-02-24T10:49:18.749028Z\",\n        \"estimated_time\": \"2023-12-03T00:12:07Z\",\n        \"is_task_completed\": true\n    },\n    {\n        \"id\": 39,\n        \"task\": {\n            \"movie\": \"batman\"\n        },\n        \"created_at\": \"2023-02-24T06:25:39.436005Z\",\n        \"updated_at\": \"2023-02-24T06:25:39.436020Z\",\n        \"estimated_time\": \"2023-02-25T06:25:39.430358Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 40,\n        \"task\": {\n            \"movie\": \"man of steel\"\n        },\n        \"created_at\": \"2023-02-24T06:37:05.529483Z\",\n        \"updated_at\": \"2023-02-24T06:37:05.529507Z\",\n        \"estimated_time\": \"2023-02-25T06:37:05.522841Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 41,\n        \"task\": {\n            \"trip\": \"shimla\",\n            \"movie\": \"man of steel\"\n        },\n        \"created_at\": \"2023-02-24T07:19:53.628583Z\",\n        \"updated_at\": \"2023-02-24T07:19:53.628597Z\",\n        \"estimated_time\": \"2023-02-25T07:19:53.623355Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 53,\n        \"task\": {\n            \"movie\": \"transformers 6\",\n            \"Greeting\": \"Hello\"\n        },\n        \"created_at\": \"2023-02-24T09:55:06.099642Z\",\n        \"updated_at\": \"2023-02-24T12:32:46.351623Z\",\n        \"estimated_time\": \"2023-02-25T09:55:06.093698Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 46,\n        \"task\": {\n            \"movie\": \"transformers\"\n        },\n        \"created_at\": \"2023-02-24T08:54:15.913980Z\",\n        \"updated_at\": \"2023-02-24T08:54:15.913993Z\",\n        \"estimated_time\": \"2023-02-25T08:54:15.909074Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 47,\n        \"task\": {\n            \"movie\": \"transformers 2\"\n        },\n        \"created_at\": \"2023-02-24T09:11:26.726991Z\",\n        \"updated_at\": \"2023-02-24T09:11:26.727005Z\",\n        \"estimated_time\": \"2023-02-25T09:11:26.721461Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 48,\n        \"task\": {\n            \"movie\": \"transformers 3\"\n        },\n        \"created_at\": \"2023-02-24T09:12:12.976319Z\",\n        \"updated_at\": \"2023-02-24T09:12:12.976337Z\",\n        \"estimated_time\": \"2023-02-25T09:12:12.970617Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 49,\n        \"task\": {\n            \"movie\": \"transformers 4\"\n        },\n        \"created_at\": \"2023-02-24T09:13:54.630462Z\",\n        \"updated_at\": \"2023-02-24T09:13:54.648062Z\",\n        \"estimated_time\": \"2023-12-03T00:12:00Z\",\n        \"is_task_completed\": true\n    },\n    {\n        \"id\": 50,\n        \"task\": {\n            \"movie\": \"transformers 4\"\n        },\n        \"created_at\": \"2023-02-24T09:14:23.934204Z\",\n        \"updated_at\": \"2023-02-24T09:14:23.934220Z\",\n        \"estimated_time\": \"2023-02-25T09:14:23.928105Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 51,\n        \"task\": {\n            \"movie\": \"transformers 5\"\n        },\n        \"created_at\": \"2023-02-24T09:14:44.618422Z\",\n        \"updated_at\": \"2023-02-24T09:14:44.618443Z\",\n        \"estimated_time\": \"2023-02-25T09:14:44.611937Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 52,\n        \"task\": {\n            \"movie\": \"transformers 5\"\n        },\n        \"created_at\": \"2023-02-24T09:53:41.022033Z\",\n        \"updated_at\": \"2023-02-24T09:53:41.022051Z\",\n        \"estimated_time\": \"2023-02-25T09:53:41.016835Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 55,\n        \"task\": {\n            \"movie\": \"transformers 8\"\n        },\n        \"created_at\": \"2023-02-24T10:06:40.967423Z\",\n        \"updated_at\": \"2023-02-24T10:06:40.967441Z\",\n        \"estimated_time\": \"2023-02-25T10:06:40.962158Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 63,\n        \"task\": {\n            \"movie\": \"transformers 15\",\n            \"assignment\": \"DM\"\n        },\n        \"created_at\": \"2023-02-27T04:34:30.798813Z\",\n        \"updated_at\": \"2023-02-27T04:34:30.809904Z\",\n        \"estimated_time\": \"2024-12-03T00:12:07Z\",\n        \"is_task_completed\": true\n    },\n    {\n        \"id\": 56,\n        \"task\": {\n            \"movie\": \"transformers 9\"\n        },\n        \"created_at\": \"2023-02-24T10:07:39.491598Z\",\n        \"updated_at\": \"2023-02-24T10:07:39.491615Z\",\n        \"estimated_time\": \"2023-02-25T10:07:39.486044Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 57,\n        \"task\": {\n            \"movie\": \"transformers 11\"\n        },\n        \"created_at\": \"2023-02-24T10:46:13.902920Z\",\n        \"updated_at\": \"2023-02-24T10:46:13.902938Z\",\n        \"estimated_time\": \"2023-02-25T10:46:13.897128Z\",\n        \"is_task_completed\": false\n    },\n    {\n        \"id\": 58,\n        \"task\": {\n            \"movie\": \"transformers 11\"\n        },\n        \"created_at\": \"2023-02-24T10:46:33.937029Z\",\n        \"updated_at\": \"2023-02-24T10:46:33.946440Z\",\n        \"estimated_time\": \"2023-12-03T00:12:07Z\",\n        \"is_task_completed\": true\n    }\n]"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,8 @@
+dict = {'movie':'Superman', 'Movie':'Batman', 'Trip':'Kashmir', 'trip':'Jaipur'}
+
+print(dict)
+key = 'movie'
+
+for i in range(len(dict)):
+    if key in dict:
+        print(dict[i])
